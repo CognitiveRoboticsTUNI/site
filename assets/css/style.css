@@ -509,6 +509,7 @@ textarea::-ms-input-placeholder
     padding-right:5px;
 }
 
+
 /*For Menu Style*/
 .navbar-default {
     background-color: transparent;
@@ -517,7 +518,7 @@ textarea::-ms-input-placeholder
     padding-top:20px;
 }
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
-    color: #82ca9c;
+    color: #6482c1;
     background-color:transparent;
 }
 .navbar-default .navbar-nav>li>a {
@@ -527,11 +528,11 @@ textarea::-ms-input-placeholder
     text-transform:uppercase;
 }
 .navbar-default .navbar-nav li a :hover{
-    color: #82ca9c;
+    color: #6482c1;
 }
 .navbar-default .collapse .login a{
-    color: #82ca9c;
-    border: 1px solid #82ca9c;
+    color: #6482c1;
+    border: 1px solid #6482c1;
     border-radius: 20px;
     padding: 4px 30px;
     font-size: 12px;
@@ -545,11 +546,11 @@ textarea::-ms-input-placeholder
     color:#fff;
 }
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
-    color: #82ca9c;
+    color: #6482c1;
     background-color: transparent;
 }
 .navbar-brand{
-    margin-top:-5px;	
+    margin-top:-23px;
 }
 
 
@@ -1241,9 +1242,9 @@ textarea::-ms-input-placeholder
     }
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
-xkeyframes 
+xkeyframes
 
 -------------------------------- */
 @-webkit-keyframes cd-rotate {
@@ -1655,5 +1656,3 @@ xkeyframes
     text-decoration: none;
 
 }
-
-
