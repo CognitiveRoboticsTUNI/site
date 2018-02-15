@@ -661,7 +661,7 @@ textarea::-ms-input-placeholder
     display: inline-block;
 }
 .single_service2 img{
-    width: 280px;
+    width: 200px;
     margin-top: -70px;
 
 }
@@ -680,6 +680,7 @@ textarea::-ms-input-placeholder
     margin: 0;
 }
 .single_service_right p{
+    text-align: justify;
     font-size:18px;
     color:#777777;
 }
