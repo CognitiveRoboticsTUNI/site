@@ -680,6 +680,7 @@ textarea::-ms-input-placeholder
     margin: 0;
 }
 .single_service_right p{
+    margin-top: 2%;
     text-align: justify;
     font-size:18px;
     color:#777777;
