@@ -631,7 +631,7 @@ textarea::-ms-input-placeholder
     height:460px;
 }
 .single_features_right {
-    margin-top:10%;
+    margin-top:0%;
 }
 
 .single_features_right h2 {
@@ -645,7 +645,7 @@ textarea::-ms-input-placeholder
 }
 .single_features_right ul li{
     font-size:18px;
-    margin-top:3%;
+    margin-top:0%;
 }
 
 /* Service2 Section */
