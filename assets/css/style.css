@@ -175,7 +175,8 @@ p:last-child {
 }
 
 .lightbg {
-    background-color: #f9f9f9;
+    background-color:  rgba(116, 151, 224, 0.1);
+    /*filter: alpha(opacity=30);*/
 }
 .transition {
     -webkit-transition: all 300ms linear;
