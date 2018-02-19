@@ -64,9 +64,16 @@ if(isset($_POST['email'])) {
 $headers = 'From: '.$email_from."\r\n".
 'Reply-To: '.$email_from."\r\n" .
 'X-Mailer: PHP/' . phpversion();
-mail($email_to, $email_subject, $email_message, $headers);
-echo "OK";
-echo $email_to."   ".$email_subject."   ".$email_message;
+$test = mail($email_to, $email_subject, $email_message, $headers);
+
+if ($test) {
+ echo("<p>Email successfully sent!</p>");
+ var_dump($test);
+ } else {
+ echo("<p>Email delivery failed…</p>");
+ }
+
+//echo $email_to."   ".$email_subject."   ".$email_message;
 }
 
 ?>
