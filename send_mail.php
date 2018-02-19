@@ -1,8 +1,9 @@
 <?php
+
 if(isset($_POST['email'])) {
 
     // EDIT THE 2 LINES BELOW AS REQUIRED
-    $email_to = "q.houbre@gmail.com";
+    $email_to = "quentin.houbre@tut.fi";
     $email_subject = "Contact form from Cognitive Robotics Website";
 
     function died($error) {
@@ -37,16 +38,8 @@ if(isset($_POST['email'])) {
 
     $string_exp = "/^[A-Za-z .'-]+$/";
 
-  if(!preg_match($string_exp,$first_name)) {
+  if(!preg_match($string_exp,$name)) {
     $error_message .= 'The First Name you entered does not appear to be valid.<br />';
-  }
-
-  if(!preg_match($string_exp,$last_name)) {
-    $error_message .= 'The Last Name you entered does not appear to be valid.<br />';
-  }
-
-  if(strlen($comments) < 2) {
-    $error_message .= 'The Comments you entered do not appear to be valid.<br />';
   }
 
   if(strlen($error_message) > 0) {
@@ -71,14 +64,9 @@ if(isset($_POST['email'])) {
 $headers = 'From: '.$email_from."\r\n".
 'Reply-To: '.$email_from."\r\n" .
 'X-Mailer: PHP/' . phpversion();
-@mail($email_to, $email_subject, $email_message, $headers);
-?>
-
-<!-- include your own success html here -->
-
-Thank you for contacting us. We will be in touch with you very soon.
-
-<?php
-
+mail($email_to, $email_subject, $email_message, $headers);
+echo "OK";
+echo $email_to."   ".$email_subject."   ".$email_message;
 }
+
 ?>
